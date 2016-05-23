@@ -29,17 +29,41 @@ class PcController extends Controller
     public function ler(Request $request)
     {
         $data = $request->all();
-        $pcd = new \App\pcsModel;
-        $pcd->create($data);
+        $pc = new \App\pcsModel;
+        $pc->create($data);
         return redirect('/');
     }
 
+    public function editar($id)
+    {
+        $pc = new \App\pcsModel;
+        $pc = $pc->find($id);
+        return view('pages.edit', ['pc' => $pc]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $pc = new \App\pcsModel;
+        $pc = $pc->find($id)->update($request->all());
+        return redirect()->route('index.app');
+    }
+
+
+    
+
 
     public function delete($id)
+
     {
+
         $pc = new \App\pcsModel;
         $pc->find($id)->delete();
         return redirect('/');
+    }
+
+    public function teste()
+    {
+        return view('pages.teste');
     }
 
 

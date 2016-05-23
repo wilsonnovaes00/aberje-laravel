@@ -18,3 +18,51 @@
     margin-right: 58px;
 
 }
+
+.formulario-edit{
+    width: 88%;
+    border-radius: 3px;
+    margin-left: 36px;
+
+}
+.text-edit{
+    margin-left: 36px;
+}
+.bt-edit{
+    margin-left: 36px;
+}
+#edit-pai{
+    background: whitesmoke;
+    width: 58%;
+    margin-left: 16%;
+    position: relative;
+    top: 107px;
+    border-top: 5px solid #008DFF;
+    padding-top: 18px;
+    padding-bottom: 28px;
+    left: 22px;
+}
+hr{
+    border-top: 1px solid #dcdef5;
+
+}
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+
+    z-index:1032;
+}
+

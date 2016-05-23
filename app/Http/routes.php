@@ -12,10 +12,18 @@
 */
 
 
-Route::get('/', ['as' => 'index.app', 'uses' => 'PcController@index']);
-Route::get('/contato', ['as' => 'contato.app', 'uses'=> 'PcController@contato']);
-Route::get('/registro', ['as' => 'registro.app', 'uses'=> 'PcController@registrar']);
-Route::post('/ok', ['as' => 'ok.app', 'uses'=> 'PcController@ler']);
-Route::get('/delete/{id}', ['as' => 'delete.app', 'uses'=> 'PcController@delete']);
+Route::get('/',             ['as' => 'index.app', 'uses' => 'PcController@index']);
+Route::get('/contato',      ['as' => 'contato.app', 'uses'=> 'PcController@contato']);
+Route::get('/registro',     ['as' => 'registro.app', 'uses'=> 'PcController@registrar']);
+Route::post('/ok',          ['as' => 'ok.app', 'uses'=> 'PcController@ler']);
+Route::get('/delete/{id}',  ['as' => 'delete.app', 'uses'=> 'PcController@delete']);
+Route::get('/edit/{id}',         ['as' => 'edit.app', 'uses'=> 'PcController@editar']);
+Route::get('/teste',         ['as' => 'teste.app', 'uses'=> 'PcController@teste']);
+
+Route::post('/update/{id}', ['as'=>'update.app', 'uses'=> 'PcController@update']);
+
+
+
+
 
 

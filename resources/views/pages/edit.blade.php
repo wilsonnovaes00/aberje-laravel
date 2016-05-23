@@ -1,7 +1,7 @@
 @extends('indexpc')
 
 @section('title')
-    Criar Registro
+    Editar Registro
 @endsection
 
 @section('content')
@@ -10,10 +10,11 @@
 
         <div id="forulario-edit"></div>
 
-        <center><h3><i class="fa fa-edit"></i> Novo Registro </h3></center>
+        <center><h3><i class="fa fa-edit"></i> Editando o Registro de número {{$pc->id}}</h3></center>
         <hr/>
 
-         {!! Form::open(['route'=>['ok.app']]) !!}
+        <form method="post" action="/update/{{$pc->id}}">
+            {!! Form::model($pc, ['route'=>['update.app', $pc->id]]) !!}
 
             {!! Form::label('title','Nome do computador', ['class'=>'text-edit']) !!} {!! Form::label(null,null, ['class'=>'fa fa-desktop']) !!}
             {!! Form::text('namepc', null, ['class'=>'form-control formulario-edit', 'required' => 'required']) !!}
@@ -27,10 +28,24 @@
             {!! Form::text('numberserie', null, ['class'=>'form-control formulario-edit', 'required' => 'required']) !!}
             <br>
 
-            <input type="submit" value="Criar Registro" class="btn btn-primary btn-sm bt-edit" >
+            <input type="submit" value="Atualizar" class="btn btn-primary btn-sm bt-edit" >
+
+
+        </div>
+
+
+
 
 
     </div>
 
-@endsection
 
+
+
+    {!! Form::close() !!}
+
+
+
+
+
+@endsection

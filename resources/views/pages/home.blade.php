@@ -44,8 +44,8 @@
                 <td>{{$pcs->numberserie}}</td>
                 <td>
 
-                    <button class="btn btn-primary btn-sm fa fa-pencil " >  </button>
-                    <a href="/delete/{{$pcs->id}}"> <button class="btn btn-danger btn-sm fa fa-times ">  </button></a>
+                    <a href="/edit/{{$pcs->id}}" data-toggle="tooltip" data-placement="top" title="Editar Registro!" >  <button class="btn btn-primary btn-sm fa fa-pencil " >  </button></a>
+                    <a href="/delete/{{$pcs->id}}" data-toggle="tooltip" data-placement="top" title="Deletar Registro!" onclick="return confirm('Deseja Excluir o registro {{"$pcs->id"}}');"> <button class="btn btn-danger btn-sm fa fa-times ">  </button></a>
 
 
                 </td>
@@ -67,4 +67,8 @@
 
 
 @endsection
+
+
+
+
 

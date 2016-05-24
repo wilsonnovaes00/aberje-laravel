@@ -1,3 +1,14 @@
-/**
- * Created by wilson on 23/05/16.
- */
+var app = angular.module('todoApp', [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('<%');
+    $interpolateProvider.endSymbol('%>');
+});
+
+
+
+
+
+
+
+
+
+

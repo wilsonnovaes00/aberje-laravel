@@ -10,6 +10,9 @@ class pcsModel extends Model
     protected $fillable = [
         'namepc', 'systemname', 'numberserie'
     ];
+    
+
+
 
 }
 

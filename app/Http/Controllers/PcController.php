@@ -2,14 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\pcsModel;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Response;
+use Illuminate\Contracts\Routing\ResponseFactory;
+
 
 
 class PcController extends Controller
+
 {
+    protected $response;
+
+    public function __construct(ResponseFactory $response)
+    {
+        $this->response = $response;
+    }
+
+
     public function index()
     {
         $pc = \App\pcsModel::paginate(9);
@@ -26,6 +39,7 @@ class PcController extends Controller
 
         return view('pages.registro');
     }
+
     public function ler(Request $request)
     {
         $data = $request->all();
@@ -48,10 +62,6 @@ class PcController extends Controller
         return redirect()->route('index.app');
     }
 
-
-    
-
-
     public function delete($id)
 
     {
@@ -63,8 +73,25 @@ class PcController extends Controller
 
     public function teste()
     {
-        return view('pages.teste');
+        $data = \App\pcsModel::all();
+        return view('pages.teste' , ['data'=> $data]);
     }
+
+
+    public function carregardados()
+    {
+        $dados = pcsModel::all();
+        return $this->response->json($dados);
+        return view('index.app', ['dados' => $dados]);
+
+
+
+    }
+
+    
+
+
+
 
 
 

@@ -26,7 +26,6 @@ class PcController extends Controller
     public function index()
     {
         $pc = \App\pcsModel::paginate(9);
-
         return view('pages.home', ['pc' => $pc]);
     }
     public function contato()
@@ -82,17 +81,10 @@ class PcController extends Controller
     {
         $dados = pcsModel::all();
         return $this->response->json($dados);
-        return view('index.app', ['dados' => $dados]);
+
 
 
 
     }
-
-    
-
-
-
-
-
 
 }

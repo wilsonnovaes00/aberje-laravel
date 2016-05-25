@@ -72,8 +72,7 @@
         </tbody>
 
 </table>
-
-        {!! $pc->render() !!}
+    
 
 
 

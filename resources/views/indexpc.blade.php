@@ -13,10 +13,10 @@
     <title> @yield('title')  </title>
 
 
-    <link href="{{ HTML::style('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ HTML::style('css/simple-sidebar.css') }}" rel="stylesheet">
-    <link href="{{ HTML::style('css/font-awesome.css') }}" rel="stylesheet">
-    <link href="{{ HTML::style('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/simple-sidebar.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
 
     <!-- Fonts -->

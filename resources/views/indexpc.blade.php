@@ -13,10 +13,10 @@
     <title> @yield('title')  </title>
 
 
-    <link href="css/bootstrap.min.css">
-    <link href="css/simple-sidebar.css">
-    <link href="css/font-awesome.css">
-    <link href="css/custom.css">
+    <link href="../css/bootstrap.min.css">
+    <link href="../css/simple-sidebar.css">
+    <link href="../css/font-awesome.css">
+    <link href="../css/custom.css">
 
 
 

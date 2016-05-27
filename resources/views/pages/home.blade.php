@@ -35,9 +35,9 @@
         <tr>
             <th>#ID</th>
             <th>Nome do Computador</th>
-            <th>Sistema Operacional</th>
+            <th>Software</th>
             <th>Número de Série</th>
-            <th>Açoes</th>
+            <th>Ações</th>
 
         </tr>
         </thead>
@@ -72,7 +72,7 @@
         </tbody>
 
 </table>
-    
+
 
 
 

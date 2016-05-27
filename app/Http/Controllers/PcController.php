@@ -25,8 +25,7 @@ class PcController extends Controller
 
     public function index()
     {
-        $pc = \App\pcsModel::paginate(9);
-        return view('pages.home', ['pc' => $pc]);
+        return view('pages.home');
     }
     public function contato()
     {

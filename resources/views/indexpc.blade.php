@@ -13,10 +13,11 @@
     <title> @yield('title')  </title>
 
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/simple-sidebar.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="css/bootstrap.min.css">
+    <link href="css/simple-sidebar.css">
+    <link href="css/font-awesome.css">
+    <link href="css/custom.css">
+    
 
 
     <!-- Fonts -->
@@ -83,7 +84,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-   
+
 
 
 

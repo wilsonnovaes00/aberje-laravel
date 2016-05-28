@@ -14,7 +14,9 @@
 
 
 
-    {{ HTML::style('css/custom.css') }}
+    <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}">
+
+
 
     <link href="css/bootstrap.min.css">
     <link href="css/simple-sidebar.css">

@@ -14,7 +14,7 @@
 
 
 
-    {{ HTML::style('css/custom.css'); }}
+    {{ HTML::style('css/custom.css') }}
 
     <link href="css/bootstrap.min.css">
     <link href="css/simple-sidebar.css">

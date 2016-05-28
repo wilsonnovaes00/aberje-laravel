@@ -7,7 +7,7 @@ var app = angular.module('todoApp', [], function($interpolateProvider) {
             .success(function(datas) {$scope.datas = datas});
 
     }
-    
+
 });
 
 

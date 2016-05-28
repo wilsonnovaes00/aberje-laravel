@@ -3,6 +3,20 @@ var app = angular.module('todoApp', [], function($interpolateProvider) {
     $interpolateProvider.endSymbol('%>');
 });
 
+<script>
+function customersController($scope,$http) {
+    $http.get("/carregardados")
+        .success(function(datas) {$scope.datas = datas});
+
+}
+
+
+
+</script>
+
+
+    
+
 
 
 

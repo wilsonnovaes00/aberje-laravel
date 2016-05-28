@@ -5,12 +5,6 @@
 @endsection
 
 
-
-
-
-
-
-
 @section('content')
 
 
@@ -77,21 +71,6 @@
 
 
 @endsection
-
-
-
-<script>
-    function customersController($scope,$http) {
-        $http.get("/carregardados")
-                .success(function(datas) {$scope.datas = datas});
-
-    }
-
-
-
-</script>
-
-<script src="js/angular.min.js"></script>
 
 
 

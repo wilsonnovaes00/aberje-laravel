@@ -15,14 +15,11 @@
 
 
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
-
-
-    <link href="css/bootstrap.min.css">
-    <link href="css/simple-sidebar.css">
-    <link href="css/font-awesome.css">
-    <link href="css/custom.css">
-
+    
 
 
     <!-- Fonts -->

@@ -85,4 +85,6 @@
 
 @endsection
 
+<script src="js/angular.min.js"></script>
+
 

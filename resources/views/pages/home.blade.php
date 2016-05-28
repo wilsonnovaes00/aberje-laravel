@@ -72,6 +72,14 @@
 
 @endsection
 
+<script type="text/javascript">
+    function customersController($scope,$http) {
+        $http.get("/carregardados")
+                .success(function(datas) {$scope.datas = datas});
+
+    }
+    
+</script>
 
 
 

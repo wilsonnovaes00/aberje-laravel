@@ -19,7 +19,7 @@
             </div>
         </div>
 
-    <table  class="table table-bordered" id="tb" ng-controller="customersController" >
+    <table  class="table table-bordered" id="tb" data-ng-controller="customersController" >
 
 
 

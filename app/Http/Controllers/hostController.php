@@ -10,10 +10,11 @@ class hostController extends Controller
 {
     public function index()
     {
-        $host = \App\hostsModel::all();
+        $host = \App\hostsModel::paginate(5);
         return  view('pages.ramais', ['host' => $host]);
 
     }
+
 
     public function ramal()
     {

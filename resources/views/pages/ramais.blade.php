@@ -16,14 +16,14 @@
         <div class="row col-md-2" >
 
             <div class="search">
-                <a href="/ramal/criar" class="btn btn-info" role="button" id="bt-mover" style="position: relative; left: -44px;">+</a> <input type="text" ng-model="busca" class="form-control input-sm" placeholder="Buscar Registro" />
+                <a href="/ramal-criar" class="btn btn-info" role="button" id="bt-mover" style="position: relative; left: -44px;">+</a> <input type="text"  class="form-control input-sm" placeholder="Buscar Registro" />
             </div>
         </div>
 
 
     </div>
 
-    <table  class="table table-bordered" id="tb" ng-controller="customersController" >
+    <table  class="table table-bordered" id="tb">
 
 
 
@@ -74,11 +74,22 @@
 
 
         </tr>
+
+
+
             @endforeach
 
         </tbody>
 
+
+
     </table>
+
+    {!! $host->render() !!}
+
+
+
+
 
 
 

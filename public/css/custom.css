@@ -24,7 +24,7 @@
 }
 
 .formulario-edit{
-    width: 88%;
+    width: 88% !important;
     border-radius: 3px;
     margin-left: 36px;
 
@@ -43,7 +43,6 @@
     top: 107px;
     border-top: 5px solid #008DFF;
     padding-top: 18px;
-    padding-bottom: 28px;
     left: 22px;
 }
 hr{
@@ -70,3 +69,10 @@ hr{
     z-index:1032;
 }
 
+.pagination{
+    position: relative !important;
+    left: -54px !important;
+    top: -7px !important;
+
+
+}

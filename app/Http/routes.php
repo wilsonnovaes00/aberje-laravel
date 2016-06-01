@@ -29,6 +29,6 @@ Route::post('/update/{id}', ['as'=>'update.app', 'uses'=> 'PcController@update']
 
 
 Route::get('/ramal', ['as' => 'ramais.app' , 'uses' => 'hostController@index']);
-Route::get('/ramal/criar', ['as' => 'ramais-criar.app' , 'uses' => 'hostController@ramal']);
-Route::post('/ramal/criar/ok', ['as' => 'ramais-ok.app' , 'uses' => 'hostController@ler']);
+Route::get('/ramal-criar', ['as' => 'ramais-criar.app' , 'uses' => 'hostController@ramal']);
+Route::post('/ramal-ok', ['as' => 'ramais-ok.app' , 'uses' => 'hostController@ler']);
 

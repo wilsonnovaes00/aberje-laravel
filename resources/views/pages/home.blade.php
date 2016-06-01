@@ -5,6 +5,7 @@
 @endsection
 
 
+
 @section('content')
 
 
@@ -71,14 +72,4 @@
 
 
 @endsection
-
-
-
-
-
-
-
-
-
-
 

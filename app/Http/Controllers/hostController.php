@@ -26,7 +26,7 @@ class hostController extends Controller
         $host = $request->all();
         $hosts = new \App\hostsModel;
         $hosts->create($host);
-        return redirect('/');
+        return redirect('/ramal');
     }
     
     

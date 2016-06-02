@@ -1,7 +1,7 @@
 @extends('indexpc')
 
 @section('title')
-    Ramis | Aberje
+    Ramais | Aberje
 @endsection
 
 

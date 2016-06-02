@@ -19,7 +19,7 @@
             {!! Form::text('namepc', null, ['class'=>'form-control formulario-edit', 'required' => 'required']) !!}
             <br>
 
-            {!! Form::label('title','Sistema Operaçional', ['class'=>'text-edit']) !!} {!! Form::label(null,null, ['class'=>'fa fa-bullseye']) !!}
+            {!! Form::label('title','Software', ['class'=>'text-edit']) !!} {!! Form::label(null,null, ['class'=>'fa fa-bullseye']) !!}
             {!! Form::text('systemname', null, ['class'=>'form-control formulario-edit', 'required' => 'required']) !!}
             <br>
 

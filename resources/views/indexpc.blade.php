@@ -66,9 +66,9 @@
                 <a href="/ramal"><i class="fa fa-phone"  style="color: white; aria-hidden="true"></i>
                     Ramais</a>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-plus" style="color: white;" aria-hidden="true"></i> Grupos</a>
-            </li>
+            {{--<li>--}}
+                {{--<a href="#"><i class="fa fa-plus" style="color: white;" aria-hidden="true"></i> Grupos</a>--}}
+            {{--</li>--}}
             <li>
                 <a href="/contact"><i class="fa fa-envelope" style="color: white;" aria-hidden="true"></i> Contato</a>
             </li>

@@ -8,19 +8,21 @@
 
 
 
+
+
     Busca: <input type="search" ng-model="busca">
 
 
 
 
-    <div ng-controller="customersController">
+    <div ng-controller="customersCtrl">
 
-        <pre><% datas | json %></pre>
 
+        <prev><% datas %></prev>
 
 
     </div>
-    <table  class="table table-bordered" id="tb" ng-controller="customersController" >
+    <table  class="table table-bordered" id="tb" >
 
 
 
@@ -35,9 +37,7 @@
         </tr>
         </thead>
 
-        <tbody ng-repeat="dt in datas | filter:busca">
-
-
+        <tbody>
 
         </tr>
         <td><% dt.id; %></td>
@@ -63,14 +63,6 @@
 
 
 
-<script>
-    function customersController($scope,$http) {
-        $http.get("/carregardados")
-                .success(function(datas) {$scope.datas = datas});
 
-    }
 
-</script>
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 

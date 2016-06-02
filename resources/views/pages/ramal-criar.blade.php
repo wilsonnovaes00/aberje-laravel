@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="edit-pai" style="position: relative; top: 9px;">
+    <div id="edit-pai" style="position: relative; top: 9px; height:629px;">
 
         <div id="forulario-edit"></div>
 

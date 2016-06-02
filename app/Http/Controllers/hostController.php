@@ -39,7 +39,7 @@ class hostController extends Controller
         $host = $host->find($id)->update($request->all());
 
 
-        return redirect('/ramal');
+        return redirect('/ramal'); 
     }
 
     public function edit($id)

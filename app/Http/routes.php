@@ -31,3 +31,9 @@ Route::get('/ramal-criar', ['as' => 'ramais-criar.app' , 'uses' => 'hostControll
 Route::post('/ramal-ok', ['as' => 'ramais-ok.app' , 'uses' => 'hostController@ler']);
 Route::get('/delete-ramal/{id}', ['as' => 'delete-ramal.app' , 'uses' => 'hostController@delete']);
 
+
+Route::get('/ramal-edit/{id}', ['as' => 'ramais-edit-ramal.app' , 'uses' => 'hostController@edit']);
+Route::post('/ramal-update/{id}', ['as' => 'ramais-update.app' , 'uses' => 'hostController@update']);
+
+
+

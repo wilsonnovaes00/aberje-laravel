@@ -31,19 +31,26 @@ class hostController extends Controller
     
     
 
-    public function editar($id)
-    {
-        $host = new \App\hostsModel;
-        $host = $host->find($id);
-        return view('pages.edit-ramal', ['host' => $host]);
-    }
+
 
     public function update(Request $request, $id)
     {
         $host = new \App\hostsModel;
         $host = $host->find($id)->update($request->all());
-        return redirect()->route('index.app');
+
+
+        return redirect('/ramal');
     }
+
+    public function edit($id)
+    {
+        $host = new \App\hostsModel();
+        $host = $host->find($id);
+
+        return view('pages.edit-ramal', ['host' => $host]);
+    }
+
+
 
 
     public function delete($id)

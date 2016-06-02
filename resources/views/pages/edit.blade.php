@@ -14,7 +14,7 @@
         <hr/>
 
         <form method="post" action="/update/{{$pc->id}}">
-            {!! Form::model($pc, ['route'=>['update.app', $pc->id]]) !!}
+            {!! Form::model($pc, ['route'=>['ramais-update.app', $pc->id]]) !!}
 
             {!! Form::label('title','Nome do computador', ['class'=>'text-edit']) !!} {!! Form::label(null,null, ['class'=>'fa fa-desktop']) !!}
             {!! Form::text('namepc', null, ['class'=>'form-control formulario-edit', 'required' => 'required']) !!}

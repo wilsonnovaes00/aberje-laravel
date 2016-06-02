@@ -66,7 +66,7 @@
         <td>
 
 
-            <a href="/edit" data-toggle="tooltip" data-placement="top" title="Editar Registro!" >  <button class="btn btn-primary btn-sm fa fa-pencil " >  </button></a>
+            <a href="/ramal-edit/{{$ht->id}}" data-toggle="tooltip" data-placement="top" title="Editar Registro!" >  <button class="btn btn-primary btn-sm fa fa-pencil " >  </button></a>
             <a href="/delete-ramal/{{$ht->id}}" data-toggle="tooltip" data-placement="top" title="Deletar Registro!" onclick="return confirm('Deseja Excluir o registro {{$ht->id}}');"> <button class="btn btn-danger btn-sm fa fa-times ">  </button></a>
 
         </td>

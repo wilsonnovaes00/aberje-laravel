@@ -18,7 +18,7 @@
 
                 {!! Form::open(['method'=>'GET','url'=>'buscar','role'=>'search' , 'class="form-buscar" '])  !!}
             <div class="col-md-5">
-                <a href="/registro" class="btn btn-info" role="button" id="bt-mover">Adicionar Novo Registro  <i class="fa fa-plus"></i></a>
+                <a href="/registro" class="btn btn-info" role="button" id="bt-mover">Adicionar Registro  <i class="fa fa-plus"></i></a>
             </div>
 
             <div class="col-md-7">

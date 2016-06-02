@@ -25,7 +25,8 @@ class PcController extends Controller
 
     public function index()
     {
-        return view('pages.home');
+        $data = \App\pcsModel::paginate(8);
+        return view('pages.home' , ['data' => $data]);
     }
     public function contato()
     {

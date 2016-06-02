@@ -12,12 +12,10 @@
 
     <title> @yield('title')  </title>
 
-
-
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/simple-sidebar.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="{!! asset('css/custom.css') !!}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/simple-sidebar.css') !!}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
 
 
 
@@ -81,10 +79,17 @@
 
 
 
-    <script src="js/angular.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+
+
+
+    <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/angular.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/bootstrap.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/custom.js') !!}"></script>
+
+
+
+
 
 
 

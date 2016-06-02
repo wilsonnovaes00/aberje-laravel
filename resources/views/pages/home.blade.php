@@ -37,17 +37,23 @@
         </tr>
         </thead>
 
+        @foreach($data as $dt)
+
 
             <tbody ng-repeat="dt in datas | filter:busca">
             <tr>
 
 
 
+
             </tr>
-            <td><% dt.id; %></td>
-            <td><% dt.namepc; %></td>
-            <td><% dt.systemname; %></td>
-            <td><% dt.numberserie; %></td>
+
+
+
+            <td>{{ $dt->id }}</td>
+            <td>{{ $dt->namepc }}</td>
+            <td>{{ $dt->systemname }}</td>
+            <td>{{ $dt->numberserie }}</td>
 
 
 
@@ -55,8 +61,8 @@
                 <td>
 
 
-                    <a href="/edit/<% dt.id; %>" data-toggle="tooltip" data-placement="top" title="Editar Registro!" >  <button class="btn btn-primary btn-sm fa fa-pencil " >  </button></a>
-                    <a href="/delete/<% dt.id; %>" data-toggle="tooltip" data-placement="top" title="Deletar Registro!" onclick="return confirm('Deseja Excluir o registro <% dt.id; %>');"> <button class="btn btn-danger btn-sm fa fa-times ">  </button></a>
+                    <a href="/edit/{{ $dt->id }}" data-toggle="tooltip" data-placement="top" title="Editar Registro!" >  <button class="btn btn-primary btn-sm fa fa-pencil " >  </button></a>
+                    <a href="/delete/{{ $dt->id }}" data-toggle="tooltip" data-placement="top" title="Deletar Registro!" onclick="return confirm('Deseja Excluir o registro {{ $dt->id }}');"> <button class="btn btn-danger btn-sm fa fa-times ">  </button></a>
 
                 </td>
 
@@ -65,8 +71,11 @@
             </tr>
 
         </tbody>
-
+        @endforeach
 </table>
+
+
+{!! $data->render() !!}
 
 
 

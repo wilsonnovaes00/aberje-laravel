@@ -46,6 +46,19 @@ class hostController extends Controller
     }
 
 
+    public function delete($id)
+
+    {
+
+        $data = new \App\hostsModel();
+        $data->find($id)->delete();
+        return redirect('/ramal');
+    }
+
+
+
+
+
 
 
 

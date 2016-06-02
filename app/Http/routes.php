@@ -22,9 +22,6 @@ Route::get('/edit/{id}',    ['as' => 'edit.app', 'uses'=> 'PcController@editar']
 Route::get('/teste',        ['as' => 'teste.app', 'uses'=> 'PcController@teste']);
 Route::get('/carregardados',['as' => 'carregar.app', 'uses'=> 'PcController@carregardados']);
 Route::post('/update/{id}', ['as'=>'update.app', 'uses'=> 'PcController@update']);
-Route::post('/buscar?search={seach}', ['as'=>'seach.app', 'uses'=> 'PcController@search']);
-
-
 
 #Routas referêntes aos Ramais
 
@@ -32,4 +29,5 @@ Route::post('/buscar?search={seach}', ['as'=>'seach.app', 'uses'=> 'PcController
 Route::get('/ramal', ['as' => 'ramais.app' , 'uses' => 'hostController@index']);
 Route::get('/ramal-criar', ['as' => 'ramais-criar.app' , 'uses' => 'hostController@ramal']);
 Route::post('/ramal-ok', ['as' => 'ramais-ok.app' , 'uses' => 'hostController@ler']);
+Route::get('/delete-ramal/{id}', ['as' => 'delete-ramal.app' , 'uses' => 'hostController@delete']);
 

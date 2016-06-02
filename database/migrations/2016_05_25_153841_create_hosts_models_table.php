@@ -17,9 +17,9 @@ class CreateHostsModelsTable extends Migration
             $table->string('nome');
             $table->integer('ramal');
             $table->string('host');
-            $table->integer('telefone');
+            $table->string('telefone');
             $table->string('email');
-            $table->integer('aniversario');
+            $table->string('aniversario');
             $table->timestamps();
         });
     }

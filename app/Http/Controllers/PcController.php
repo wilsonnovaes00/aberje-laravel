@@ -26,11 +26,23 @@ class PcController extends Controller
     public function index()
     {
         $data = \App\pcsModel::paginate(8);
-        return view('pages.home' , ['data' => $data]);
+        return view('pages.home' , ['data'=> $data]);
     }
     public function contato()
     {
         return view('pages.contato');
+    }
+
+    public function search()
+    {
+        $search = \Request::get('search');
+
+        $buscar = pcsModel::where('namepc','like','%'.$search.'%')
+            ->orderBy('namepc')
+            ->paginate(20);
+
+        return view('pages.buscar' , ['buscar' => $buscar]);
+
     }
 
     public function registrar()

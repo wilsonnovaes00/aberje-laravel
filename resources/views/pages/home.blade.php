@@ -10,15 +10,27 @@
 
 
     <div class="container">
-            <div class="row">
+        <div class="row" style="margin-top: 50px;">
 
-                <div class="search">
-                    <input type="text" ng-model="busca" class="form-control input-sm" placeholder="Buscar Registro" />
+            <div class="search">
+                {{--<input type="text" ng-model="busca" class="form-control input-sm" placeholder="Buscar Registro" />--}}
 
-                    <a href="/registro" class="btn btn-info" role="button" id="bt-mover">Adicionar Novo Registro  <i class="fa fa-plus"></i></a>
+
+                {!! Form::open(['method'=>'GET','url'=>'search','role'=>'search' , 'class="form-buscar" '])  !!}
+            <div class="col-md-5">
+                <a href="/registro" class="btn btn-info" role="button" id="bt-mover">Adicionar Novo Registro  <i class="fa fa-plus"></i></a>
+            </div>
+
+            <div class="col-md-7">
+            <input type="text" class="form-control" name="search"  placeholder="Buscar Registro " style="width: 80%; display: -moz-box !important; position: relative; top: 2px;"><button class="btn btn-default-sm" type="submit" style="margin-left: 4px;">Buscar</button>
+            </div>
+                    {!! Form::close() !!}
+
+
+
                 </div>
             </div>
-        </div>
+
 
     <table  class="table table-bordered" id="tb" data-ng-controller="customersController" >
 

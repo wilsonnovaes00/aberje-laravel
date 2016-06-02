@@ -35,6 +35,14 @@
 .bt-edit{
     margin-left: 36px;
 }
+
+.buscar-frm{
+    margin-left: 21px !important;
+    border-radius: 2px !important;
+    width: 80%;
+}
+
+
 #edit-pai{
     background: whitesmoke;
     width: 58%;
@@ -47,6 +55,12 @@
     height: 406px;
 
 }
+
+
+.bt-frm{
+    margin-right: -150px !important;
+}
+
 hr{
     border-top: 1px solid #dcdef5;
 

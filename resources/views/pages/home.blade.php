@@ -16,7 +16,7 @@
                 {{--<input type="text" ng-model="busca" class="form-control input-sm" placeholder="Buscar Registro" />--}}
 
 
-                {!! Form::open(['method'=>'GET','url'=>'search','role'=>'search' , 'class="form-buscar" '])  !!}
+                {!! Form::open(['method'=>'GET','url'=>'buscar','role'=>'search' , 'class="form-buscar" '])  !!}
             <div class="col-md-5">
                 <a href="/registro" class="btn btn-info" role="button" id="bt-mover">Adicionar Novo Registro  <i class="fa fa-plus"></i></a>
             </div>
@@ -32,7 +32,7 @@
             </div>
 
 
-    <table  class="table table-bordered" id="tb" data-ng-controller="customersController" >
+    <table  class="table table-bordered" id="tb">
 
         <thead>
         <tr>
@@ -48,9 +48,10 @@
         @foreach($data as $dt)
 
 
-            <tbody ng-repeat="dt in datas | filter:busca">
+            <tbody>
+
             <tr>
-            </tr>
+
 
             <td>{{ $dt->id }}</td>
             <td>{{ $dt->namepc }}</td>
@@ -71,10 +72,7 @@
         @endforeach
 </table>
 
-
-{!! $data->render() !!}
-
-
+    {!! $data->render() !!}
 
 
 @endsection

@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/custom.css">
     {{--<link href="{!! asset('css/custom.css') !!}" media="all" rel="stylesheet" type="text/css" />--}}
 
-    <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{!! asset('css/simple-sidebar.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
 
 
 

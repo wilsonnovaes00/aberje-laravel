@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
     <title> @yield('title')  </title>
-    <link href="resources/css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     {{--<link href="{!! asset('css/custom.css') !!}" media="all" rel="stylesheet" type="text/css" />--}}
 
     <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />

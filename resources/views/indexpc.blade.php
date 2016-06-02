@@ -11,8 +11,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
     <title> @yield('title')  </title>
-    {!!Html::style('css/custom.css')!!}
+    <link href="css/custom.css" type="text/css">
     {{--<link href="{!! asset('css/custom.css') !!}" media="all" rel="stylesheet" type="text/css" />--}}
+
     <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/simple-sidebar.css') !!}" media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
